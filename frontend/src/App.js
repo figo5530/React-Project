@@ -5,10 +5,16 @@ import ShopInput from './shops/ShopInput';
 
 function App () {
     return (
-      <>
-        <NavBar />
-        <ShopInput />
-      </>
+      <div className="whole-wrap">
+        <div className="container">
+          <NavBar />
+          <div className="section-top-border">
+            <ShopInput />
+          </div>
+          
+          
+        </div>
+      </div>
     )
 }
 export default App;

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 
+
 class ShopInput extends Component {
     state = {
         text: ''
@@ -22,13 +23,18 @@ class ShopInput extends Component {
 
     render() {
         return(
-        <div>
-            <label>search shop</label>
-            <form onSubmit={this.hanldeSubmit}>
-                <input type='text' onChange={this.handleChange} value={this.state.text} placeholder="Please input the keyword"/>
-                <input type='submit' value='submit'/>
+        <>
+            <h3>search shop</h3>
+            <form id="form" onSubmit={this.hanldeSubmit}>
+                <input type='text' 
+                onChange={this.handleChange} 
+                value={this.state.text} 
+                placeholder="Please input the keyword"
+                className="single-input"/>
+
+                <input type='submit' value='submit' className="genric-btn success radius"/>
             </form>
-        </div>
+        </>
         )
     }
 }
