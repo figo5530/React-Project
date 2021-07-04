@@ -26,7 +26,7 @@ class ShopInput extends Component {
             <label>search shop</label>
             <form onSubmit={this.hanldeSubmit}>
                 <input type='text' onChange={this.handleChange} value={this.state.text} placeholder="Please input the keyword"/>
-                <input type='submit'/>
+                <input type='submit' value='submit'/>
             </form>
         </div>
         )
