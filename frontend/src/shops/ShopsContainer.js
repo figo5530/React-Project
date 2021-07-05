@@ -2,6 +2,7 @@ import React, {Component} from 'react'
 import {Route, Switch} from 'react-router-dom'
 import {connect} from 'react-redux'
 import fetchShops from '../actions/fetchShops'
+import Shops from './Shops'
 
 class ShopsContainer extends Component {
     componentDidMount() {
@@ -10,8 +11,13 @@ class ShopsContainer extends Component {
 
     render() {
         return (
-            <div>
-            </div>
+            <>
+                <Switch>
+                    <Route exact path="/shops">
+                        <Shops />
+                    </Route>
+                </Switch>
+            </>
         )
     }
 }
