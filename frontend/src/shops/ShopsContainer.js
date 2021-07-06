@@ -13,7 +13,7 @@ class ShopsContainer extends Component {
         return (
             <>
                 <Switch>
-                    <Route exact path="/shops">
+                    <Route path="/shops">
                         <Shops />
                     </Route>
                 </Switch>
