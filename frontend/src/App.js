@@ -1,4 +1,5 @@
 import './style/style.css'
+import './style/bootstrap.css'
 import NavBar from './NavBar'
 import React from 'react'
 import ShopInput from './shops/ShopInput';
