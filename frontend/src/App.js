@@ -6,9 +6,15 @@ import ShopsContainer from './shops/ShopsContainer';
 
 function App () {
     return (
+      <>
+      <header className="header_area">
+        <div className="container">
+          <nav className="navbar navbar-expand-lg navbar-light"><NavBar /></nav>
+        </div>
+      </header>
+      
       <div className="whole-wrap">
         <div className="container">
-          <NavBar />
           <div className="section-top-border">
             <ShopInput />
           </div>
@@ -19,6 +25,7 @@ function App () {
 
         </div>
       </div>
+      </>  
     )
 }
 export default App;

@@ -5,7 +5,7 @@ class Shops extends Component {
     render() {
         return (
             <ul>
-                {this.props.shops.map(shop => <li key={shop.id}>{shop.name}</li>)}
+                {this.props.shops.map(shop => <p key={shop.id}>{shop.name}</p>)}
             </ul>
         )
     }

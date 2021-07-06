@@ -41,6 +41,14 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
 }
 
+/*============== header css =============*/
+
+
+
+.navbar .menu_nav .nav-item:hover .nav-link, .navbar .menu_nav .nav-item.active .nav-link {
+  color: #52c5fd;
+}
+
 /*============== Elements Area css ================*/
 .mb-30 {
   margin-bottom: 30px;
