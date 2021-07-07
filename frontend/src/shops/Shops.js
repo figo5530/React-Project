@@ -1,12 +1,13 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import Shop from './Shop'
+import { Link } from 'react-router-dom'
 
 class Shops extends Component {
     render() {
         return (
             <ul>
-                {this.props.shops.map(shop => <Shop shop={shop}/>)}
+                {this.props.shops.filter(shop => shop.id <= 7).map(shop => <Link to={`/shops/${shop.id}`}><Shop shop={shop}/></Link>)}
             </ul>
         )
     }

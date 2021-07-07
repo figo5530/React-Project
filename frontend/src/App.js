@@ -2,8 +2,9 @@ import './style/style.css'
 import './style/bootstrap.css'
 import NavBar from './NavBar'
 import React from 'react'
-import ShopInput from './shops/ShopInput';
 import ShopsContainer from './shops/ShopsContainer';
+import {Route, Switch} from 'react-router-dom'
+
 
 function App () {
     return (
@@ -14,18 +15,9 @@ function App () {
         </div>
       </header>
       
-      <div className="whole-wrap">
-        <div className="container">
-          <div className="section-top-border">
-            <ShopInput />
-          </div>
-          <div className="section-top-border">
-            <ShopsContainer />
-          </div>
-          
-
-        </div>
-      </div>
+      <Switch>
+        <Route path='/shops' render={routerProps => <ShopsContainer {...routerProps} />} />
+      </Switch>
       </>  
     )
 }
