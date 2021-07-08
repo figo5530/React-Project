@@ -5,9 +5,10 @@ export default function addReview(review) {
         method: "POST",
         headers: {Accept: "application/json", "Content-Type": "application/json"},
         body: JSON.stringify({review: review})
-      }).then(r => r.json())
-      .then(review => {
+        }).then(r => r.json())
+        .then(review => {
+        console.log(review)
         dispatch({type: "ADD_REVIEW", payload: review})
-    })
+        })
     }
-  }
+}
