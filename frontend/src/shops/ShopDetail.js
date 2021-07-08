@@ -1,6 +1,7 @@
 import React from 'react'
 import {useSelector} from 'react-redux'
 import Shop from './Shop'
+import ReviewsContainer from '../reviews/ReviewsContainer'
 
 
 export default function ShopDetail(props) {
@@ -10,20 +11,12 @@ export default function ShopDetail(props) {
         return (
             <>
                 <Shop shop={shop}/>
-                <div className="section-top-border">
-						<h3 className="mb-30 title_color">Reviews</h3>
-						<div className="row">
-							<div className="col-md-3">
-                                User Name
-							</div>
-							<div className="col-md-9 mt-sm-20 left-align-p">
-                                Actual commets
-							</div>
-						</div>
-                </div>
+                <ReviewsContainer reviews={shop.reviews}/>
+        
+                
             </>
         )
     }else {
-        return <div>Not Found</div>
+        return <div>Loading</div>
     }
 }
