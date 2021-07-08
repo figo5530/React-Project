@@ -15,8 +15,6 @@ export default class Shop extends Component {
 							<div class="col-md-9 mt-sm-20 left-align-p">
 								<p>{address}, {city}, {state}, {postal_code}</p>
 								<p>{stars} stars, {categories}</p>
-								
-								
 							</div>
 						</div>
                 </div>
