@@ -11,7 +11,7 @@ export default function ShopDetail(props) {
         return (
             <>
                 <Shop shop={shop}/>
-                <ReviewsContainer reviews={shop.reviews}/>
+                <ReviewsContainer shop={shop}/>
         
                 
             </>
