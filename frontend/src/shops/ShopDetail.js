@@ -11,12 +11,12 @@ export default function ShopDetail(props) {
             <>
                 <Shop shop={shop}/>
                 <div className="section-top-border">
-						<h3 class="mb-30 title_color">Reviews</h3>
-						<div class="row">
-							<div class="col-md-3">
+						<h3 className="mb-30 title_color">Reviews</h3>
+						<div className="row">
+							<div className="col-md-3">
                                 User Name
 							</div>
-							<div class="col-md-9 mt-sm-20 left-align-p">
+							<div className="col-md-9 mt-sm-20 left-align-p">
                                 Actual commets
 							</div>
 						</div>
