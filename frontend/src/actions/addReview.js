@@ -7,7 +7,6 @@ export default function addReview(review) {
         body: JSON.stringify({review: review})
         }).then(r => r.json())
         .then(review => {
-        console.log(review)
         dispatch({type: "ADD_REVIEW", payload: review})
         })
     }

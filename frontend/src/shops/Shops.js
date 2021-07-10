@@ -7,7 +7,7 @@ class Shops extends Component {
     render() {
         return (
             <ul>
-                {this.props.shops.filter(shop => shop.id <= 7).map(shop => <Link to={`/shops/${shop.id}`}><Shop shop={shop}/></Link>)}
+                {this.props.shops.filter(shop => shop.id <= 30).map(shop => <Link to={`/shops/${shop.id}`}><Shop shop={shop}/></Link>)}
             </ul>
         )
     }

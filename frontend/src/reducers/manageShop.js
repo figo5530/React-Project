@@ -4,14 +4,15 @@ export default function manageShop (state={ shops: [] },action) {
             return {shops: action.payload}
 
         case "DELETE_REVIEW":
-            //to be finished
-            return state
+            const deleteReivewShop = state.shops.find(s => s.id === action.payload.shopId)
+            deleteReivewShop.reviews = deleteReivewShop.reviews.filter(r => r.id !== action.payload.reviewId)
+            return {shops: state.shops}
+
         case "ADD_REVIEW":
-            console.log(action.payload)
             const updatedShop = state.shops.find(shop => shop.id === action.payload.shop.id)
             updatedShop.reviews = [...updatedShop.reviews, action.payload]
-            console.log(state.shops)
-            return {shops: state.shops.map(shop => shop.id === updatedShop.id ? updatedShop : shop)}
+            // return {shops: state.shops.map(shop => shop.id === updatedShop.id ? updatedShop : shop)}
+            return {shops: [...state.shops], updatedShop}
         default:
             return state
     }
