@@ -14,7 +14,8 @@ class ReviewsContainer extends Component {
             <>
             <div className="section-top-border">
                 <h3 className="mb-30 title_color">Reviews</h3>
-                <Reviews deleteReview={this.props.deleteReview} shopId={this.props.shop.id} reviews={this.props.shop.reviews}/>
+                {console.log(this.props.shop.reviews)}
+                <Reviews key={this.props.shop.id} deleteReview={this.props.deleteReview} shopId={this.props.shop.id} reviews={this.props.shop.reviews}/>
             </div>
             <div className="section-top-border">
                 <h3 className="mb-30 title_color">Comment down here</h3>

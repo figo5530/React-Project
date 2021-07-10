@@ -9,7 +9,7 @@ class Review extends Component {
     render() {
         return (
             <>
-            <div className="row" >
+            <div className="row"  key={this.props.review.id}>
                     <div className="col-md-3"><p>Anonymous User</p></div>
                     <div className="col-md-6 mt-sm-20 left-align-p"><p>{this.props.review.content}</p></div>
                     <div className="col-md-3">
