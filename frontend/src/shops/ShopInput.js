@@ -14,8 +14,9 @@ class ShopInput extends Component {
 
     hanldeSubmit = e => {
         e.preventDefault()
-        console.log(this.state.text)
+        this.props.handleSetSearchTerm(this.state.text)
         //to be finished
+        
         this.setState({
             text: ''
         })

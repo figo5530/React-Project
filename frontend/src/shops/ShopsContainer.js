@@ -7,6 +7,17 @@ import { Route } from 'react-router'
 import ShopDetail from './ShopDetail'
 
 class ShopsContainer extends Component {
+
+    state = {
+        searchTerm: ''
+    }
+
+    setSearchTerm = (searchTerm) => {
+        this.setState({
+            searchTerm: searchTerm
+        })
+    }
+
     componentDidMount() {
         this.props.fetchShops()
     }
@@ -16,10 +27,11 @@ class ShopsContainer extends Component {
         <div className="whole-wrap">
             <div className="container">
                 <div className="section-top-border">
-                    <ShopInput />
+                    <ShopInput handleSetSearchTerm={this.setSearchTerm}/>
+                    {console.log(this.state.searchTerm)}
                 </div>
                 <div className="section-top-border">
-                    <Route exact path={this.props.match.url} render={() => <Shops />}/>
+                    <Route exact path={this.props.match.url} render={() => <Shops searchTerm={this.state.searchTerm}/>}/>
                     <Route exact path={`${this.props.match.url}/:id`} render={(routerProps) => <ShopDetail {...routerProps}/>}/>
                 </div>
              </div>

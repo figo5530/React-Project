@@ -5,11 +5,20 @@ import { Link } from 'react-router-dom'
 
 class Shops extends Component {
     render() {
-        return (
-            <ul>
-                {this.props.shops.filter(shop => shop.id <= 30).map(shop => <Link to={`/shops/${shop.id}`}><Shop shop={shop}/></Link>)}
-            </ul>
-        )
+        if (this.props.searchTerm === '') {
+            return (
+                <ul>
+                    {this.props.shops.filter(shop => shop.id <= 30).map(shop => <Link to={`/shops/${shop.id}`}><Shop shop={shop}/></Link>)}
+                </ul>
+            )
+        }
+        else {
+            return (
+                <ul>
+                    {this.props.shops.filter(shop => shop.name.includes(this.props.searchTerm)).map(shop => <Link to={`/shops/${shop.id}`}><Shop shop={shop}/></Link>)}
+                </ul>
+            )
+        }
     }
 }
 const mapStateToProps = state => {
