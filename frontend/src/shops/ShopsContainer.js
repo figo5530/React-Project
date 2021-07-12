@@ -28,7 +28,6 @@ class ShopsContainer extends Component {
             <div className="container">
                 <div className="section-top-border">
                     <ShopInput handleSetSearchTerm={this.setSearchTerm}/>
-                    {console.log(this.state.searchTerm)}
                 </div>
                 <div className="section-top-border">
                     <Route exact path={this.props.match.url} render={() => <Shops searchTerm={this.state.searchTerm}/>}/>
