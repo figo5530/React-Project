@@ -18,7 +18,8 @@ function App () {
     
       <Switch>
         <Route path='/shops' render={routerProps => <ShopsContainer {...routerProps} />} />
-        <Route path='/' render={() => <HomePage />} />
+        <Route exact path='/' render={routerProps => <HomePage {...routerProps}/>} />
+        {/* <Route path='/city' render={() => <div>City!!</div>} /> */}
       </Switch>
       </>  
     )

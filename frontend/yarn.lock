@@ -8935,6 +8935,11 @@
     "regenerator-runtime" "^0.13.3"
     "whatwg-fetch" "^3.0.0"
 
+"react-append-head@^1.0.16":
+  "integrity" "sha512-lEZxJrW0MgBZZEmIBMW/fQznGjBgPi9SdGL5fI7NTjiB5DgDrNeQ5a6eKYs7InbYenmIaLR5W/B5MVQCxc1EUw=="
+  "resolved" "https://registry.npmjs.org/react-append-head/-/react-append-head-1.0.16.tgz"
+  "version" "1.0.16"
+
 "react-dev-utils@^10.2.1":
   "integrity" "sha512-XxTbgJnYZmxuPtY3y/UV0D8/65NKkmaia4rXzViknVnZeVlklSh8u6TnaEYPfAi/Gh1TP4mEOXHI6jQOPbeakQ=="
   "resolved" "https://registry.npmjs.org/react-dev-utils/-/react-dev-utils-10.2.1.tgz"

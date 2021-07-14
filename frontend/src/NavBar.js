@@ -7,7 +7,7 @@ export default function NavBar() {
             <ul className="nav navbar-nav menu_nav ml-auto">
                 <li className="nav-item"><Link className="nav-link" to="/">Home</Link></li>
                 <li className="nav-item"><Link className="nav-link" to="/shops">Shops</Link></li>
-                <li className="nav-item"><Link className="nav-link" to="/">City</Link></li>
+                <li className="nav-item"><Link className="nav-link" to="/city">City</Link></li>
             </ul>
         </div>
     )

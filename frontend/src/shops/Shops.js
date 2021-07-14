@@ -15,7 +15,7 @@ class Shops extends Component {
         else {
             return (
                 <ul>
-                    {this.props.shops.filter(shop => shop.name.includes(this.props.searchTerm)).map(shop => <Link key={shop.id} to={`/shops/${shop.id}`}><Shop key={shop.id} shop={shop} /></Link>)}
+                    {this.props.shops.filter(shop => shop.name.toLowerCase().includes(this.props.searchTerm.toLowerCase())).map(shop => <Link key={shop.id} to={`/shops/${shop.id}`}><Shop key={shop.id} shop={shop} /></Link>)}
                 </ul>
             )
         }
