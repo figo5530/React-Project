@@ -1,6 +1,7 @@
 import './style/style.css'
 import './style/bootstrap.css'
 import NavBar from './NavBar'
+import City from './City'
 import React from 'react'
 import ShopsContainer from './shops/ShopsContainer';
 import {Route, Switch} from 'react-router-dom'
@@ -19,7 +20,7 @@ function App () {
       <Switch>
         <Route path='/shops' render={routerProps => <ShopsContainer {...routerProps} />} />
         <Route exact path='/' render={routerProps => <HomePage {...routerProps}/>} />
-        {/* <Route path='/city' render={() => <div>City!!</div>} /> */}
+        <Route path='/city' render={routerProps => <City {...routerProps}/>} />
       </Switch>
       </>  
     )
