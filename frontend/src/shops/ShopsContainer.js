@@ -27,7 +27,7 @@ class ShopsContainer extends Component {
         <div className="whole-wrap">
             <div className="container">
                 <div className="section-top-border">
-                    <ShopInput handleSetSearchTerm={this.setSearchTerm}/>
+                    <Route exact path='/shops' render={() => <ShopInput handleSetSearchTerm={this.setSearchTerm}/>}/>
                 </div>
                 <div className="section-top-border">
                     <Route exact path={this.props.match.url} render={() => <Shops searchTerm={this.state.searchTerm}/>}/>
