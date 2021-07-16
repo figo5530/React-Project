@@ -8,7 +8,7 @@ class Shops extends Component {
         if (this.props.searchTerm === '') {
             return (
                 <ul>
-                    {this.props.shops.filter(shop => shop.id <= 30).map(shop => <Link key={shop.id} to={`/shops/${shop.id}`}><Shop key={shop.id} shop={shop} /></Link>)}
+                    {this.props.shops.map(shop => <Link key={shop.id} to={`/shops/${shop.id}`}><Shop key={shop.id} shop={shop} /></Link>)}
                 </ul>
             )
         }

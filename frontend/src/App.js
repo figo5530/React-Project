@@ -21,6 +21,10 @@ function App () {
         <Route path='/shops' render={routerProps => <ShopsContainer {...routerProps} />} />
         <Route exact path='/' render={routerProps => <HomePage {...routerProps}/>} />
         <Route path='/city' render={routerProps => <City {...routerProps}/>} />
+        <Route path='/boston/shops' render={() => <div>Boston!!!!</div>} />
+        <Route path='/newyork/shops' render={() => <div>NY!!!!</div>} />
+        <Route path='/sanfrancisco/shops' render={() => <div>SF!!!!</div>} />
+        <Route path='/seattle/shops' render={() => <div>Seattle!!!!</div>} />
       </Switch>
       </>  
     )
