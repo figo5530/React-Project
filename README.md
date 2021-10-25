@@ -7,9 +7,9 @@
 * Usage
 
 ## Overview
-This React-project is an web-app that allows users browse shops and comments and add/delete comments as well.
+This React project is a web app that allows users to browse shops and comments and add/delete comments as well.
 
-HTML structure and CSS styling are from one of my previous static webpage project.
+HTML structure and CSS styling are from one of my previous static webpage projects.
 
 ## Instruction
 1. Clone this repo.
