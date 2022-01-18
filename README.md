@@ -1,21 +1,26 @@
 
 ## Summary
-* Objective
+* Overview
 * Instruction
 * Usage
 
-## Objective
-Create an app for benchmarking an engineer's coding and communication skills against other engineers that work at similar companies and with the same title (e.g. Junior Engineer)
+## Overview
+This React project is a web app that allows users to browse shops and comments and add/delete comments as well.
+
+HTML structure and CSS styling are from one of my previous static webpage projects.
 
 ## Instruction
 1. Clone this repo.
-2. Create a terminal and Run 'npm install'
-3. Run 'npm start'
-4. Enter 'localhost:3000' in the address bar of your browser. 
-
+2. Go to the backend folder
+3. Run 'bundle install'.
+4. Run 'rails s -p 3001'.
+5. Create a new terminal and go to frontend folder
+6. Run 'npm install'
+7. Run 'npm start'
+8. Enter 'localhost:3000' in the address bar of your browser. 
 ## Usage
-After starting your server, type in candidate's id to check their percentile compared to other engineers that work at similar companies and with the same title.
-
-function findSimilarCompany takes a person object and returns a similarCompanies array based on whether its absolute value of fractal_index difference is less than 0.15
-
-function getComAndCodePercentile takes a similarCompanies array and a person object and returns an array with communication percentile, code percentile, number of communication scores less than target, number of coding scores less than target and total values that match title and company
+After starting your server, use homepage to check around.
+## Contributing
+Bug reports and pull requests are welcome on GitHub at [https://github.com/figo5530/React-Project]. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [CONTRIBUTING](https://github.com/figo5530/React-Project/blob/main/CONTRIBUTING).
+## License
+The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
