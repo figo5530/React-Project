@@ -1,5 +1,3 @@
-# React Project
-
 
 ## Summary
 * Objective
