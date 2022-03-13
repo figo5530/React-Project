@@ -12,7 +12,6 @@ class ReviewForm extends Component {
     hanldeSubmit = e => {
         e.preventDefault()
         const review = {...this.state, shop_id: this.props.shopId}
-        //to be finished
         this.props.addReview(review)
         this.setState({
             content: ''

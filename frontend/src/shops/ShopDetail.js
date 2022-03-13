@@ -12,11 +12,9 @@ export default function ShopDetail(props) {
             <>
                 <Shop shop={shop}/>
                 <ReviewsContainer shop={shop}/>
-        
-                
             </>
         )
     }else {
-        return <div>Loading</div>
+        return <div>Couldn't find the right match for you, please try again.</div>
     }
 }

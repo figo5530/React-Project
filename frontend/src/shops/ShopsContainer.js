@@ -18,6 +18,12 @@ class ShopsContainer extends Component {
         })
     }
 
+    // setSearchTerm = (searchTerm) => {
+    //     this.setState(function(prevState, props) {
+    //         return {searchTerm: prevState.searchTerm}
+    //     })
+    // }
+
     componentDidMount() {
         this.props.fetchShops()
     }
