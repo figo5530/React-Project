@@ -1,4 +1,5 @@
 import React, {Component} from 'react'
+import Test from './test'
 import { Link } from 'react-router-dom'
 
 class City extends Component {
@@ -54,6 +55,7 @@ class City extends Component {
 						</div>
 					</div>
              </div>
+             <Test />
         </div>
         )
     }

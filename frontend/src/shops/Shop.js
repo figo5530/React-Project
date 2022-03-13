@@ -2,7 +2,7 @@ import React, {Component} from 'react'
 
 export default class Shop extends Component {
     render() {
-            const {id, name, address, city, state, postal_code, stars, categories} = this.props.shop
+            const {id, name, address, city, state, postal_code, stars, categories, review_count} = this.props.shop
                 const image = require("../img/" + id + ".jpg")
 
             return(
@@ -15,6 +15,7 @@ export default class Shop extends Component {
 							<div className="col-md-9 mt-sm-20 left-align-p">
 								<p>{address}, {city}, {state}, {postal_code}</p>
 								<p>{stars} stars, {categories}</p>
+								<p>{review_count} reviews</p>
 							</div>
 						</div>
                 </div>

@@ -18,7 +18,7 @@ class Shops extends Component {
         return (
             shopArr.length > 0 ? <ul>
             {shopArr.map(shop => <Link key={shop.id} to={`/shops/${shop.id}`}><Shop key={shop.id} shop={shop} /></Link>)}
-            </ul> : <div><p>Sorry that we couldn't find the right match for you. Please return and try again.</p></div>
+            </ul> : <div><p>Loading...</p></div>
         )
     }
 
